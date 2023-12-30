@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>KPI Framework</title>
+    <script src="vendor/d3/d3.v3.min.js"></script>
+    <link href="vendor/jquery-ui-1.12.1.custom/jquery-ui.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+  </head>
+  <body>
+
+    <div style="display: flex;">
+      <fieldset>
+        <legend>Business Organization</legend>
+        <div id="controlgroup">
+          <select id="car-type">
+            <option>All Business Units</option>
+            <option>Football</option>
+            <option>Originals</option>
+            <option>Running</option>
+            <option>Training</option>
+            <option>Neo</option>
+            <option>Basketball</option>
+            <option>Heartbeat</option>
+            <option>Outdoor</option>
+          </select>
+          <select id="car-type">
+            <option>All Countries</option>
+            <option>Germany</option>
+            <option>France</option>
+            <option>Netherlands</option>
+            <option>Spain</option>
+          </select>
+          <!-- <label for="transmission-standard">Adidas.com</label>
+          <input type="radio" name="transmission" id="transmission-standard">
+          <label for="transmission-automatic">AppX</label>
+          <input type="radio" name="transmission" id="transmission-automatic">
+          <label for="desktop">Desktop</label>
+          <input type="checkbox" name="insurance" id="desktop">
+          <label for="mobile">Mobile</label>
+          <input type="checkbox" name="insurance" id="mobile"> -->
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Platform</legend>
+        <div id="controlgroup2">
+          <label for="transmission-standard">Adidas.com</label>
+          <input type="radio" name="transmission" id="transmission-standard">
+          <label for="reebok">Reebook.com</label>
+          <input type="radio" name="transmission" id="reebok">
+          <label for="transmission-automatic">AppX</label>
+          <input type="radio" name="transmission" id="transmission-automatic">
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Device</legend>
+        <div id="controlgroup3">
+          <label for="desktop">Desktop</label>
+          <input type="checkbox" name="insurance" id="desktop">
+          <label for="mobile">Mobile</label>
+          <input type="checkbox" name="insurance" id="mobile">
+        </div>
+      </fieldset>
+    </div>
+
+
+    <div id="skills">
+      <div id="skillmap">
+        <div class="skills-wrapper">
+          <div class="skills-sunburst"></div>
+          <div class="skills-chart">
+            <div id="skills-chart-breadcrumb"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="vendor/jquery/2.1.1/jquery.min.js"></script>
+    <script src="vendor/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <script>
+    $( "#controlgroup,#controlgroup2,#controlgroup3" ).controlgroup();
+    // $('#reebok').on('click', function(){
+    //   refreshdata();
+    //   initchart();
+    //   console.log('hello');
+    // });
+    </script>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
